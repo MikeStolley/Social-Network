@@ -1,6 +1,7 @@
 const { Thoughts, Users } = require('../models');
 
 const tController = {
+    
     createThoughts({ params, body }, res) {
         Thoughts.create(body)
         .then(({_id}) => {
